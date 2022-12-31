@@ -1,0 +1,156 @@
+
+body {
+  background-color: #050A1D;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 80%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mysection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.firstsection {
+  background-image: url("/images/section1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.secondsection {
+  background: rgb(1,9,14);
+  background: linear-gradient(90deg, rgba(1,9,14,1) 0%, rgba(16,37,43,1) 86%);
+}
+
+.thirdsection {
+  background: rgb(1,9,14);
+  background: linear-gradient(288deg, rgba(1,9,14,1) 0%, rgba(100,27,139,1) 86%);
+}
+
+.fourthsection {
+  background: rgb(1,9,14);
+  background: linear-gradient(288deg, rgba(1,9,14,1) 0%, rgba(168,35,184,1) 86%);
+}
+
+.fifthsection {
+  background: rgb(1,9,14);
+  background: linear-gradient(57deg, rgba(1,9,14,1) 0%, rgba(36,119,141,1) 86%);
+}
+
+.section2-left, .section3-right, .section4-left {
+ width: 50%;
+  padding: 0 2rem;
+}
+
+.section4-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.pricecards {
+  display: flex;
+}
+
+.pricecard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.5rem;
+  background-image: url("/images/tarot_card_blank.png"); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 472px;
+  margin: 0 2rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.features p {
+  line-height: .9rem;
+}
+
+.myimg {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.img-section2 {
+  max-width: 50%;
+  height: auto;
+}
+
+.img-section3 {
+  max-width: 50%;
+  height: auto;
+}
+
+.img-section4 {
+  max-width: 50%;
+  height: auto;
+}
+
+.portrait {
+  max-width: fit-content;
+  height: auto;
+}
+
+
+.scrollsnap-container {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory; /* for older browsers */
+  scroll-snap-points-y: repeat(100vh); /* for older browsers */
+  scroll-snap-type: y mandatory;
+  position: relative;
+}
+
+.sidemenu {
+  position: absolute;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+.sidemenu a {
+  text-decoration: none;
+  color: white;
+  width: 10%;
+}
