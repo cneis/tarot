@@ -10,6 +10,7 @@ h1 {
   font-size: 2rem;
 }
 
+
 h2 {
   font-size: 1.5rem;
 }
@@ -20,7 +21,9 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
 }
+
 .mysection {
   height: 100vh;
   display: flex;
@@ -28,15 +31,22 @@ h2 {
   justify-content: center;
 
   scroll-snap-align: start;
-  position: relative;
+
 }
 
 .firstsection {
-  background-image: url("/images/section1.png");
+  position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  background-image:
+  linear-gradient(57deg, rgba(1,9,14,1) 64%, rgba(36,119,141,0) 77%), 
+  url("/images/section1_bg.png");
+
 }
+
+
 
 .secondsection {
   background: rgb(1,9,14);
@@ -106,6 +116,15 @@ h2 {
 .myimg {
   border: 1px solid #ddd;
   border-radius: 4px;
+}
+
+.img-section1 {
+  max-width: auto;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
 }
 
 .img-section2 {
